@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(144, 36, 36, 1) 10%,
+    rgba(131, 26, 26, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+h1 {
+  padding: 5px;
+  margin-bottom: 40px;
+  font-size: 35px;
+  color: black;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  -webkit-box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+  box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+}
+
+#container_secundario {
+  width: 700px;
+  padding: 30px 50px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  border: 3px solid black;
+  -webkit-box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+  box-shadow: 3px -3px 5px 3px rgba(128, 128, 128, 0.75);
+}
+
+#container_input {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#container_input::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid black;
+  margin-top: 65px;
+  height: 10px;
+  border-radius: 30px;
+}
+
+#container_input_txt {
+  outline: none;
+  border: 1px solid black;
+  width: 85%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#container_btn {
+  width: 15%;
+  outline: none;
+  border: 1px solid black;
+  background: palegoldenrod;
+  color: black;
+  margin-left: 5px;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  transition: ease-in;
+}
+
+#container_btn:hover {
+  background-color: rgb(225, 215, 108);
+}
+
+#container_palavra {
+  color: rgb(95, 97, 54);
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+#container_significado {
+  color: black;
+  font-style: italic;
+  margin-bottom: 9px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+span {
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (max-width: 445px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+
+  #container_secundario,
+  #container_input {
+    width: 100%;
+  }
+
+  #container_secundario {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
